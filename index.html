@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>D3 homework</title>
+	<!-- import bootstrap 4 CSS and JS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- import d3 and d3-tip JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.3/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+    <!-- import local CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-12 col-md-offset-0">
+				<h1 class="chartTitle"><strong>D3 Visualization:<br> Health Risks and Demographic Trends</strong></h1>
+			</div>
+		</div>
+		<div class="row">			
+			<div class="col-xs-12  col-md-9 col-md-offset-0">
+				<div class="iframeContainer">
+					<!-- link d3 chart to the iframe here -->
+					<iframe src="d3.html" frameborder="0"></iframe>
+				</div>
+
+				<div class="row dataSource">
+					<div class="col-xs-12  col-md-9 col-md-offset-0">
+						<div>
+							<h6>Data Source:</h6>
+							<ul>
+								<li style="font-size: 10px;">
+									<a href="https://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml">2014 one-year estimates from the U.S. Census Bureau's American Community Survey</a>
+								</li>
+								<li style="font-size: 10px;">
+									<a href="https://chronicdata.cdc.gov/Behavioral-Risk-Factors/BRFSS-2014-Overall/5ra3-ixqq">2014 survey data from the Behavioral Risk Factor Surveillance System</a>
+								
+								</li>
+							</ul>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- right side of page -->
+			<div class="col-xs-12  col-md-3 ml-auto">
+				<!-- analysis section -->
+				<div class="article" style="font-size: 14px;padding-top: 10px;">
+					<h5>Possible Causes of Your Health Risks</h5>
+					<p>
+						Correlations Discovered Between Health Risks, Age, Income are 
+						a pattern emerged to indicate some likely causes of major health risks.&nbsp;&nbsp;&nbsp;
+						 e.g. Obesity, Smoking. <br> 
+						 Among many factors reviewed, such as poverty ratio, age, family median income and 
+						 level of education played higher correlations to identify the health risks.  
+						 
+						<ul>
+							<li>The correlation between Healthcare coverage and Education less than high school amounts to 69%</li>
+							<li>The correlation between Median income and obesity amounts to 66%</li>
+					        <li>The correlation between Median income and smoking risk amounts to 66%</li>
+						</ul>
+					</p>
+
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+</body>
+<footer class="footer-content">
+	<div id="footer">
+	  <p class="text-center">&copy; Copyright Neela UCI Data Boot Camp 2018</p>
+	</div>
+</footer>
+</html>
